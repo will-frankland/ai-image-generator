@@ -5,6 +5,14 @@ import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
 
 const CreatePost = () => {
+const navigate = useNavigate();
+const [form, setForm] = useState({
+  name: '',
+  prompt: '',
+  photo: '',
+});
+const [generatingImg, setGeneratingImg] = useState(false);
+
   return (
     <div>
       CreatePost
