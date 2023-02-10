@@ -3,7 +3,9 @@ import { Loader, Card, FormField } from "../components";
 
 const RenderCards = ({ data, title }) => {
   if (data?.length > 0) {
-    return data.map((post) => <Card key={post._id} {...post} />)
+    return (
+      data.map((post) => <Card key={post._id} {...post} />)
+    );
   }
 
   return (
@@ -41,7 +43,7 @@ const Home = () => {
           <>
             {searchText && (
               <h2 className="font-medium text-[#666e75] text-xl mb-3">
-                Showing results for{" "}
+                Showing results for
                 <span className="text-[#222328]">{searchText}</span>
               </h2>
             )}
