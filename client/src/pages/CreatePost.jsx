@@ -13,6 +13,9 @@ const CreatePost = () => {
   });
   const [generatingImg, setGeneratingImg] = useState(false);
   const [loading, setLoading] = useState(false);
+  const handleSubmit = () => {
+
+  };
 
   return (
     <section className="max-w-7xl mx-auto">
@@ -23,6 +26,9 @@ const CreatePost = () => {
           share them with the community
         </p>
       </div>
+      <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
+
+      </form>
     </section>
   );
 };
