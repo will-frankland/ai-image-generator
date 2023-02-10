@@ -12,6 +12,7 @@ const [form, setForm] = useState({
   photo: '',
 });
 const [generatingImg, setGeneratingImg] = useState(false);
+const [loading, setLoading] = useState(false);
 
   return (
     <div>
